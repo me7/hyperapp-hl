@@ -1,0 +1,30 @@
+{
+  "name": "hyperapp-hl",
+  "version": "1.0.0",
+  "description": "hyperapp hot reload template",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "node scripts/build",
+    "dev": "node scripts/dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me7/hyperapp-hl.git"
+  },
+  "keywords": [
+    "hyperapp"
+  ],
+  "author": "Gampol T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/me7/hyperapp-hl/issues"
+  },
+  "homepage": "https://github.com/me7/hyperapp-hl#readme",
+  "dependencies": {
+    "hyperapp": "^1.0.1",
+    "rollup": "^0.54.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "uglify-js": "^3.3.5"
+  }
+}
