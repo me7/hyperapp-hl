@@ -1,17 +1,21 @@
 const rollup = require('rollup')
-    , nodeResolved = require('rollup-plugin-node-resolve')
+    , node = require('rollup-plugin-node-resolve')
+    , ugly = require('rollup-plugin-uglify')
+    , babel = require('rollup-plugin-buble')
 
 //minify js
 rollup.rollup({
     input: 'src/index.js',
     plugins:[
-        nodeResolved()
+        node(),
+        babel(),
+        ugly({compress: true}),
     ]
 })
 .then(bundle =>
   bundle.write({
       file: 'dist/app.js',
-      format: 'umd'
+      format: 'umd',
   })
 )
 .catch(console.error)
