@@ -22,5 +22,5 @@ rollup.rollup({
 
 //copy index to dist folder
 const fs = require('fs')
-const index = fs.readFileSync('scripts/index.htm','utf8')
-fs.writeFileSync('dist/index.htm', index)
+const index = fs.readFileSync('scripts/index.html','utf8')
+fs.writeFileSync('dist/index.html', index)

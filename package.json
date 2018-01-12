@@ -28,6 +28,7 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-plugin-uglify-es": "^0.0.1",
-    "uglify-js": "^3.3.5"
+    "uglify-js": "^3.3.5",
+    "wright": "^1.0.1"
   }
 }

@@ -3,5 +3,8 @@ import {h, app} from "hyperapp"
 const state = {}
 const actions = {}
 const views = (state, actions) =>
-  h('h1', {}, 'HyperApp Hot Reload')
+  h('div', {}, [
+    h('h3', {}, 'HyperApp Hot Reload using Wright'),
+    h('button', {onclick:(()=>console.log('click on:' + new Date()))}, 'Click Me')
+  ])
 app(state, actions, views, document.body)
